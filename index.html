@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Image Resizer App</title>
+  <link rel="icon" href="img/cool.png" type="image/x-icon">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/71e2b74092.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="dark-mode">
+  <div class="wrapper">
+    <button id="themebtn"><img src="img/darkicon.png" class="icon"></button>
+    <div class="upload-box">
+      <input type="file" accept="image/*" hidden>
+      <img src="https://www.codingnepalweb.com/demos/resize-and-compress-image-javascript/upload-icon.svg" alt="" > 
+      <p>Browse file to upload.</p>
+    </div>
+    <div class="content">
+      <div class="row sizes">
+        <div class="column width">
+          <label>Width</label>
+          <input type="number">
+        </div>
+        <div class="column height">
+          <label>Height</label>
+          <input type="number">
+        </div>
+      </div>
+      <div class="row checkboxes">
+        <div class="column ratio">
+          <input type="checkbox" id="ratio" checked>
+          <label for="ratio">Lock aspect ratio</label>
+        </div>
+        <div class="column quality">
+          <input type="checkbox" id="quality">
+          <label for="quality">Reduce quality</label>
+        </div>
+      </div>
+      <button class="download-btn">Download Image</button>
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+
+</body>
+
+</html>
